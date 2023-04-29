@@ -40,7 +40,12 @@ require("lazy").setup({
   'Exafunction/codeium.vim',
 
   -- color theme
-  'marko-cerovac/material.nvim',
+  { 'wojciechkepka/vim-github-dark', 
+    config = function ()  
+      vim.cmd('colorscheme ghdark')
+    end
+  },
+
 
   -- harpooooon for quick file switching
   'ThePrimeagen/harpoon',
